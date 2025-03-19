@@ -1,0 +1,28 @@
+<div>
+    <div class="row"><app-header></app-header></div>
+    <div class="row" style="margin-top: 5%; text-align: center;">
+        <h1>Termék fajták:</h1>
+    </div>
+    <nav>
+        <button class="tipusok" *ngFor="let t of tipusok" (click)="getPekarukByTipus(t)">{{t}}</button>
+        <!-- <button class="tipusok" *ngFor="let t of tipusok" (click)="getPekarukByTipus(t)">Barna</button>
+        <button class="tipusok" *ngFor="let t of tipusok" (click)="getPekarukByTipus(t)">Rozsos</button>
+        <button class="tipusok" *ngFor="let t of tipusok" (click)="getPekarukByTipus(t)">Fánk</button>
+        <button class="tipusok" *ngFor="let t of tipusok" (click)="getPekarukByTipus(t)">Csiga</button>
+        <button class="tipusok" *ngFor="let t of tipusok" (click)="getPekarukByTipus(t)">Magvas</button> -->
+    </nav>
+    
+    <div class="row">
+        <div id="kartyak" class="col-12 col-md-3" *ngFor="let aruk of termekek">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" [src]="aruk.kepUrl" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{aruk.nev}}</h5>
+                  <a class="btn btn-primary">Kosárba</a>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+    <div class="row"><app-footer></app-footer></div>
+</div>

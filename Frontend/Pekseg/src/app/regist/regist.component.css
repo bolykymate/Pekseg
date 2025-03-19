@@ -1,0 +1,38 @@
+p{
+    padding-top: 1cm;
+    text-align: center;
+}
+
+.input {
+    width: 5%;
+}
+
+.gomb {
+    text-align: center;
+    
+}
+
+.bejelentg {
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    margin-left: 10px;
+    width: 95%;
+    height: 140%;
+    color: #f5f5f5;
+}
+
+.bejelentg:Hover {
+    color: white;
+    background-color: #008500;
+}
+
+button {
+    width: 20%;
+}
+
+.bezaras {
+    float: right;
+    margin-top: 25px;
+    padding-bottom: 4%;
+}

@@ -1,0 +1,72 @@
+#kartyak {
+     margin: 40px 0px 10px 150px;
+    text-align: center;
+}
+
+.card {
+   background-color: #ADE8F4;
+    border: none; 
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-top: 2%;
+    background-color: #5d047a;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+
+.tipusok {
+    background-color: #5d047a;
+    border: 1px #e8d905 solid;
+    color: #e8d905;
+    border:none;
+    border-radius: 10px;
+    width: 17%;
+    height: 45px;
+    justify-content: space-between;
+  }
+  
+.tipusok:Hover {
+    background-color: #f7e645;
+    color: #5d047a;
+}
+
+
+
+
+
+
+/* ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 25px;
+    margin-left: 8%;
+    
+}
+
+
+.felsorolas {
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+.tipusok {
+    background-color: #5d047a;
+    border: 1px #e8d905 solid;
+    color: #e8d905;
+    border-radius: 10px;
+    width: 10%;
+    height: 45px;
+  }
+  
+  .tipusok:Hover {
+    background-color: #f7e645;
+    color: #5d047a;
+  } */

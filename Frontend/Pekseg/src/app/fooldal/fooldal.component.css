@@ -1,0 +1,16 @@
+.d-block {
+    height: 850px;
+}
+.cardok {
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #ADE8F4;
+    border: none;
+}
+
+#carouselId {
+    z-index: 0;
+    margin-top: 3%;
+}

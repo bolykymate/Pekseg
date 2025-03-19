@@ -14,7 +14,7 @@ import { SzolgaltatasService } from '../szolgaltatas.service';
 export class TermekekComponent {
   termekek: Pekaru[] = [];
   tipusok: string[] = [];
-
+  adatok: string[] = [];
   constructor(private service: SzolgaltatasService) {}
 
   ngOnInit() {
@@ -33,4 +33,8 @@ export class TermekekComponent {
       this.termekek = data;
     });
   }
+
+  /* hozzaadas(index: any): any {
+    this.adatok.push(index)
+  } */
 }

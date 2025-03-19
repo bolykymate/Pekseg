@@ -3,14 +3,6 @@ p{
     text-align: center;
 }
 
-.input {
-    width: 5%;
-}
-
-.gomb {
-    text-align: center;
-    
-}
 
 .bejelentg {
     border-radius: 10px;
@@ -32,7 +24,21 @@ button {
 }
 
 .bezaras {
-    float: right;
-    margin-top: 25px;
-    padding-bottom: 4%;
+    margin-top: 40px;
+    padding-bottom: 1cm;
+    display: flex;
+}
+
+.bezaras .gombegy {
+    border-radius: 5px;
+    border: none;
+    margin-left: 35%;
+    height: 50px;
+}
+
+.bezaras .gombket {
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    margin-left: 2%;
 }

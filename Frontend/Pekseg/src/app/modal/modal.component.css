@@ -1,17 +1,27 @@
 p{
     padding-top: 1cm;
-    text-align: center;
+
 }
 
-span {
-    padding-bottom: 1cm;
+.felulet {
+    margin-left: 1%;
+}
+
+.regiszt {
+    padding-bottom: 5%;
+}
+
+.regiszt p {
+    margin-top: 1%;
+    margin-left: 6%;
 }
 
 .bezaras button {
-    float: right;
-    margin-top: 25px;
+    margin-left: 77%;
+    margin-top: 8%;
     border-radius: 5px;
     border: none;
+    height: 70%;
 }
 
 .bejelentg {
@@ -32,3 +42,5 @@ span {
 button {
     width: 20%;
 }
+
+

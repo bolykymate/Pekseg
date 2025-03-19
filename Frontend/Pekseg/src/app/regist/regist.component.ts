@@ -7,6 +7,7 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dial
 import { MatError, MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-regist',
@@ -27,5 +28,20 @@ export class RegistComponent {
 
   close() {
     this.dialogRef.close();
+  }
+
+  
+    openModal() {
+      document.body.style.overflow = 'hidden';
+    
+      const dialogRef = this.dialog.open(ModalComponent, {
+        width: '500px',
+        
+        
+      });
+    
+      dialogRef.afterClosed().subscribe(() => {
+        document.body.style.overflow = 'auto';
+      });
   }
 }

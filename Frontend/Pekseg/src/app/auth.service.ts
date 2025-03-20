@@ -8,7 +8,7 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/api';
+  private apiUrl = 'http://127.0.0.1:8000/api/pekseg';
   private loggedInUser = signal<User | null>(null);
 
   constructor(private http: HttpClient, private router: Router) {

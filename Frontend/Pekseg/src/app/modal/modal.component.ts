@@ -8,6 +8,8 @@ import { MatSelectModule } from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import { Overlay } from '@angular/cdk/overlay';
 import { RegistComponent } from '../regist/regist.component';
+import { User } from '../models/pekseg.model';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-modal',
@@ -23,7 +25,7 @@ export class ModalComponent {
     };
   constructor(
     public dialogRef: MatDialogRef<ModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { message: string }, public dialog: MatDialog, private overlay: Overlay
+    @Inject(MAT_DIALOG_DATA) public data: { message: string }, public dialog: MatDialog, private overlay: Overlay, private auth: AuthService
   ) {}
 
   close() {
@@ -44,4 +46,20 @@ export class ModalComponent {
       document.body.style.overflow = 'auto';
     });
 }
+
+  user: User = { username: '', password: '', email: '' }; 
+  message: string = '';
+  
+
+
+   login() {
+    this.auth.login(this.user.username, this.user.password, this.user.email).subscribe({
+      next: () => {
+        this.message = 'Sikeres bejelentkezés!';
+      },
+      error: () => {
+        this.message = 'Hibás felhasználónév vagy jelszó!';
+      }
+    });
+  } 
 }

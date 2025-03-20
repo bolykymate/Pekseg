@@ -13,6 +13,7 @@ Route::get('/pekseg',[FelhasznaloController::class,'index']);
 Route::post('/pekseg',[FelhasznaloController::class,'store']);
 Route::get('/pekseg/{id}', [FelhasznaloController::class, 'getByid']);
 Route::get('/pekseg/felhasz/{fid}',[FelhasznaloController::class,'FilterByFelhasznaloid']);
+Route::post('/pekseg/register',[FelhasznaloController::class, 'addFelhasznalo']);
 Route::put('/pekseg/{id}', [FelhasznaloController::class, 'update']);
 Route::delete('/pekseg/{id}', [FelhasznaloController::class, 'destroy']);
 

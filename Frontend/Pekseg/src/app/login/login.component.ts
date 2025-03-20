@@ -15,25 +15,5 @@ import { NgIf } from '@angular/common';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  /* user: User = { username: '', password: '', email: '' }; */
-  message: string = '';
   
-
-  constructor(private auth: AuthService) {}
-
-
- 
-
-    
-
-  /* login() {
-    this.auth.login(this.user.username, this.user.password, this.user.email).subscribe({
-      next: () => {
-        this.message = 'Sikeres bejelentkezés!';
-      },
-      error: () => {
-        this.message = 'Hibás felhasználónév vagy jelszó!';
-      }
-    });
-  } */
 }

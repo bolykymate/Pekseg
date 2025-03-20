@@ -1,9 +1,10 @@
+<form (ngSubmit)="registration()">
 <p>Regisztrációs felület</p>
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Név</mat-label>
-      <input class="input" matInput type="text" name="name"
-      [(ngModel)]="felh.name" required #name="ngModel">
-      <mat-error *ngIf="name.invalid && name.touched">
+      <input class="input" matInput type="text" name="username"
+      [(ngModel)]="user.username" required #username="ngModel">
+      <mat-error *ngIf="username.invalid && username.touched">
       A név megadása kötelező!
       </mat-error>
     </mat-form-field>
@@ -11,7 +12,7 @@
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Email</mat-label>
       <input class="input" matInput type="email" name="email"
-      [(ngModel)]="felh.email" required #email="ngModel">
+      [(ngModel)]="user.email" required #email="ngModel">
       <mat-error *ngIf="email.invalid && email.touched">
       Nem megfelelő az email
       </mat-error>
@@ -20,7 +21,7 @@
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>Jelszó</mat-label>
       <input class="input" matInput type="password" name="password"
-      [(ngModel)]="felh.password" required #password="ngModel">
+      [(ngModel)]="user.password" required #password="ngModel">
       <mat-error *ngIf="password.invalid && password.touched">
       Legalább 8 karakter hosszú legyen a jelszó!
       </mat-error>
@@ -28,16 +29,17 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Jelszó megerősítése</mat-label>
         <input class="input" matInput type="password" name="password"
-        [(ngModel)]="felh.password" required #password="ngModel">
+        [(ngModel)]="user.password" required #password="ngModel">
         <mat-error *ngIf="password.invalid && password.touched">
         Legalább 8 karakter hosszú legyen a jelszó!
         </mat-error>
       </mat-form-field>
       <div class="bejelent">
-        <button class="bejelentg">Regisztrálás</button>
+        <button class="bejelentg" type="submit">Regisztrálás</button>
       </div>
 <div class="bezaras">
     <button class="gombket" (click)="openModal()" (click)="close()">Vissza a Bejelentkezéshez</button>
     <button class="gombegy" (click)="close()">Bezárás</button>
     
 </div>
+</form>

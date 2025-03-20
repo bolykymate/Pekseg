@@ -57,6 +57,21 @@ class FelhasznaloController extends Controller
     return response()->json($felhasznalo); 
     }
 
+
+    public function addFelhasznalo(request $request){
+        $validator = Validator::make($request->all(),[
+            'nev' => 'required',
+            'jelszo' => 'required',
+            'email' => 'required'
+        ]);
+        if($validator->fails()){
+            return response()->json($validator->errors(),400);
+        }
+            $felhasznalok = Felhasznalo::create($request->all());
+            return response($felhasznalok,201);
+    }
+
+
     public function update(Request $request,$id)
     {
         $felhasznalo=Felhasznalo::find($id);

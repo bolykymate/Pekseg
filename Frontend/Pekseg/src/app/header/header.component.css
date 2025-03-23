@@ -3,7 +3,7 @@
 }
 
 .toolbar {
-  background-color: #602773;
+  background-color: #925c3e;
   color: white;
   z-index: 1;
   position: fixed;
@@ -23,17 +23,17 @@ mat-icon, span {
 }
 
 .login {
-  color: #e8d905;
-  background-color: #5d047a;
-  border: 1px #e8d905 solid;
+  color: #fbe5cf;
+  background-color: #925c3e;
+  border: 1px #fbe5cf solid;
   border-radius: 5px;
   width: 110%;
   height: 40px;
 }
 
 .login:Hover {
-  background-color: #f7e645;
-  color: #5d047a;
+  background-color: #fbe5cf;
+  color: #925c3e;
 }
 
 span a:hover, mat-icon:hover {

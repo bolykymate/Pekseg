@@ -4,7 +4,7 @@
 }
 
 .card {
-   background-color: #ADE8F4;
+   background-color: #F3E5AB;
     border: none; 
 
 }
@@ -14,7 +14,7 @@ nav {
     justify-content: space-around;
     font-size: 25px;
     margin-top: 2%;
-    background-color: #5d047a;
+    background-color: #784732;
     margin-left: 6%;
     margin-right: 6%;
     padding: 1%;
@@ -23,9 +23,9 @@ nav {
 
 
 .tipusok {
-    background-color: #5d047a;
-    border: 1px #e8d905 solid;
-    color: #e8d905;
+    background-color: #784732;
+    border: 1px #F3E5AB solid;
+    color: #F3E5AB;
     border:none;
     border-radius: 10px;
     width: 17%;
@@ -35,11 +35,13 @@ nav {
   
 .tipusok:Hover {
     background-color: #f7e645;
-    color: #5d047a;
+    color: #784732;
 }
 
 
-
+h1 {
+    color: wheat;
+}
 
 
 

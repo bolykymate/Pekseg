@@ -1,4 +1,4 @@
-# Projekt
+# Pékség 
 **WEBALKALMAZÁS HASZNÁLATA/INDÍTÁSA**  
 Előfeltételek a webalkalmazás futtatáshoz/telepítéshez:  
 -	XAMPP (Apache + MySQL) telepítése

@@ -18,7 +18,7 @@ Előfeltételek a webalkalmazás futtatáshoz/telepítéshez:
 2.	Ellenőrizzük, hogy az env-ben a pekseg adatbázis van megadva
 3.	Új terminál nyitása
 4.	Adatbázis migrálása és feltöltése: „php artisan migrate –seed” paranccsal
-5.	Importáljuk be a projektmappában lévő sql fájlt a pékáru táblába
+5.	Töltsük le a pékáru tábla SQL fájlját a GitHub feltöltések közül, majd importáljuk az adatbázisba (pl. phpMyAdmin segítségével).
 6.	Laravel szerver indítása: „php artisan serve” paranccsal
 7.	A terminálban ekkor megjelenik egy visszajelzés, amely mutatja, hogy a szerver fut
 Ezután a backend elérhető lesz
